@@ -67,6 +67,7 @@ namespace Core_Proje
             }
 
             app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404/");
+            
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
