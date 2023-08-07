@@ -1,11 +1,13 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccesLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace Core_Project.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         public IActionResult Index()
